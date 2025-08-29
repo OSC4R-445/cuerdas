@@ -24,6 +24,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+  background: #dddddd;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  align-items: center;
+  padding: 0 5%;
+  border-bottom: solid 1px #6d99ec;
+  width: 100%;
+}
+header > div {
+  display: flex;
+  width: 45%;
+}
+header > div:last-child {
+  justify-content: flex-end;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: left;
+}
+
+.postComment > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
