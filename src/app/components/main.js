@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Crear from "./crear";
 
+/* (；一_一)/<(Lo que costó fue el css, bye) */
 const Card = ({ post }) => {
   return (
     <div className="card">
@@ -39,15 +40,14 @@ const Card = ({ post }) => {
         <h4 className="bi bi-chat-right"></h4>
         <h4 className="bi bi-arrow-repeat"></h4>
         <h4 className="bi bi-send"></h4>
+        <div className="postLikes">{post.likes} Me gusta</div>
       </div>
-
-      <div className="postLikes">{post.likes} Me gusta</div>
     </div>
   );
 };
 
 export default function Main() {
-  const estaLogueado = true
+  const estaLogueado = true;
 
   const posts = [
     {
@@ -69,13 +69,14 @@ export default function Main() {
       likes: 30,
       timestamp: "10 min",
       id: 2,
-    }
+    },
   ];
 
   return (
     <main>
       <Crear />
       <Card key={posts[0].id} post={posts[0]} />
+      {/* Solo se toma en cuenta a estaLogueado para el segundo card, Utíl para no mostrar contenido sensible :>*/}
       {estaLogueado && <Card key={posts[1].id} post={posts[1]} />}
     </main>
   );
