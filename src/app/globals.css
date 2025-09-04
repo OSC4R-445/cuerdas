@@ -1,3 +1,5 @@
+/* linea 92 para ver los cambios para el desafio 2 */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -201,5 +203,5 @@ main {
   margin-top: 8px;
   color: #6a6a6a;
   width: 95%;
-  text-align: start;
+  text-align: end;
 }
